@@ -17,25 +17,33 @@
   <body>
     <header class="w-full">
       <nav
-        class="bg-indigo-950 flex flex-col p-4 items-center w-full text-white"
+        class="bg-indigo-950 flex flex-col p-4 items-center w-full text-white relative"
       >
         <div class="flex justify-between w-full items-center">
           <div>
-            <img src="#" alt="logo" />
+            <img
+              src="./img/iran-flag-icon-256.png"
+              alt="lang"
+              width="35x"
+              title="change language"
+              id="languageicon"
+            />
           </div>
           <div>
-            <a href="#" class="">
-              <i class="fa fa-bars text-3xl"> </i>
-            </a>
+            <i class="fa fa-bars text-3xl cursor-pointer" id="nav-bars"> </i>
           </div>
         </div>
-        <div class="flex-col gap-x-1 text-white hidden">
-          <a href="#">Home</a>
-          <a href="#aboutme" class="text-orange-500">About ME</a>
-          <a href="#services">Services</a>
-          <a href="#">Skills</a>
-          <a href="#">Portfolio</a>
-          <a href="#">Contact</a>
+        <div
+          class="flex-col items-center p-14 gap-y-3 text-white flex absolute bg-gray-950 w-full min-h-screen bg-opacity-80 top-0 left-[-500px] transition-all duration-500 text-3xl"
+          id="nav-links"
+        >
+          <i class="fa-solid fa-x absolute top-8 right-8" id="nav-close"></i>
+          <a href="#" class="a-link">Home</a>
+          <a href="#aboutme" class="text-orange-500 a-link">About ME</a>
+          <a href="#services" class="a-link">Services</a>
+          <a href="#" class="a-link">Skills</a>
+          <a href="#" class="a-link">Portfolio</a>
+          <a href="#" class="a-link">Contact</a>
         </div>
         <div
           class="bg-white text-indigo-950 rounded-full px-14 py-2 font-bold hidden"
@@ -328,9 +336,9 @@
               ></textarea>
               <div class="flex justify-center items-center">
                 <input
-                  type="submit "
+                  type="submit"
                   value="Send"
-                  class="rounded-full bg-gray-600 bg-opacity-50 p-2 px-3 text-[14px] text-center"
+                  class="rounded-full bg-gray-600 bg-opacity-50 p-2 px-3 text-[14px] text-center w-32"
                 />
               </div>
             </form>
