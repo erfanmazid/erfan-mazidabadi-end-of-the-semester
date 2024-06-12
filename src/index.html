@@ -41,9 +41,9 @@
           <a href="#" class="a-link">Home</a>
           <a href="#aboutme" class="text-orange-500 a-link">About ME</a>
           <a href="#services" class="a-link">Services</a>
-          <a href="#" class="a-link">Skills</a>
-          <a href="#" class="a-link">Portfolio</a>
-          <a href="#" class="a-link">Contact</a>
+          <a href="#skil" class="a-link">Skills</a>
+          <a href="#port" class="a-link">Portfolio</a>
+          <a href="#contact" class="a-link">Contact</a>
         </div>
         <div
           class="bg-white text-indigo-950 rounded-full px-14 py-2 font-bold hidden"
@@ -56,11 +56,13 @@
       <section
         class="bg-purple-950 flex flex-col p-5 text-white text-center items-center"
       >
-        <p class="text-orange-500 text-2xl">Hi, It's me</p>
-        <h1 class="text-3xl font-bold">Erfan Mazidabadi</h1>
-        <p>
+        <p class="text-orange-500 text-2xl" id="start">Hi, It's me</p>
+        <h1 class="text-3xl font-bold" id="name">Erfan Mazidabadi</h1>
+        <p id="who-im1">
           And I'm a
-          <span class="text-orange-500 text-2xl">Frontend Developer</span>
+          <span class="text-orange-500 text-2xl" id="who-im2"
+            >Frontend Developer</span
+          >
         </p>
         <div class="flex gap-x-5 justify-center p-5 text-3xl">
           <a
@@ -101,8 +103,8 @@
         id="aboutme"
         class="bg-indigo-950 flex flex-col text-white items-center pb-8"
       >
-        <h2 class="pt-8 border-b-2 text-2xl">
-          About <span class="text-orange-500">Me</span>
+        <h2 class="pt-8 border-b-2 text-2xl" id="about">
+          About <span class="text-orange-500" id="about2">Me</span>
         </h2>
         <div class="flex justify-between w-full p-4 items-center gap-x-4">
           <img
@@ -110,10 +112,10 @@
             alt="face photo"
             class="w-32 rounded-full border-2 border-white"
           />
-          <h3>Frontend Developer & Graphic Designer</h3>
+          <h3 id="about-t">Frontend Developer & Graphic Designer</h3>
         </div>
         <div class="p-4 text-justify">
-          <p>
+          <p id="about-b">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex nostrum
             quisquam explicabo minus dolore, vel ducimus debitis adipisci! Quis
             officia veritatis asperiores non nemo nisi at vero id voluptatibus
@@ -123,7 +125,7 @@
         <div
           class="bg-white text-indigo-950 py-2 rounded-full w-[60%] text-center"
         >
-          <a href="#">Read More ...</a>
+          <a href="#" id="about-btn">Read More ...</a>
         </div>
       </section>
 
@@ -132,14 +134,15 @@
         class="bg-purple-950 flex flex-col gap-y-5 text-indigo-950 items-center pb-8"
       >
         <h2 class="pt-8 border-b-2 text-2xl text-white">
-          My <span class="text-orange-500">Services</span>
+          <span id="services">My</span>
+          <span class="text-orange-500" id="services2">Services</span>
         </h2>
         <div
           class="w-[90%] bg-white rounded-2xl flex flex-col justify-center items-center gap-y-4 py-12 px-5"
         >
           <i class="fa-solid fa-laptop text-orange-500 text-[60px]"></i>
-          <h3 class="text-3xl font-bold">Web Developement</h3>
-          <p class="text-center">
+          <h3 class="text-3xl font-bold" id="services1-t">Web Developement</h3>
+          <p class="text-center" id="services1-b">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
             assumenda repudiandae architecto sit ut quo ad accusamus hic
             distinctio pariatur laudantium, tempore, repellendus ex dignissimos
@@ -150,8 +153,8 @@
           class="w-[90%] bg-white rounded-2xl flex flex-col justify-center items-center gap-y-4 py-12 px-5"
         >
           <i class="fa-solid fa-mobile text-orange-500 text-[60px]"></i>
-          <h3 class="text-3xl font-bold">Apps Developement</h3>
-          <p class="text-center">
+          <h3 class="text-3xl font-bold" id="services2-t">Apps Developement</h3>
+          <p class="text-center" id="services2-b">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
             assumenda repudiandae architecto sit ut quo ad accusamus hic
             distinctio pariatur laudantium, tempore, repellendus ex dignissimos
@@ -162,8 +165,8 @@
           class="w-[90%] bg-white rounded-2xl flex flex-col justify-center items-center gap-y-4 py-12 px-5"
         >
           <i class="fa-solid fa-laptop text-orange-500 text-[60px]"></i>
-          <h3 class="text-3xl font-bold">Web Developement</h3>
-          <p class="text-center">
+          <h3 class="text-3xl font-bold" id="services3-t">Web Developement</h3>
+          <p class="text-center" id="services3-b">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
             assumenda repudiandae architecto sit ut quo ad accusamus hic
             distinctio pariatur laudantium, tempore, repellendus ex dignissimos
@@ -173,11 +176,12 @@
       </section>
 
       <section
-        id="aboutme"
+        id="skil"
         class="bg-indigo-950 flex flex-col text-white items-center pb-8 gap-y-5"
       >
         <h2 class="pt-8 border-b-2 text-2xl">
-          My <span class="text-orange-500">Skills</span>
+          <span id="skils">My</span>
+          <span class="text-orange-500" id="skils2">Skills</span>
         </h2>
         <div class="flex justify-between items-center gap-x-4 w-[90%]">
           <p class="w-1/5 text-center">HTML-5</p>
@@ -228,8 +232,11 @@
 
       <section
         class="bg-purple-950 flex flex-col gap-y-5 text-indigo-950 items-center pb-8"
+        id="port"
       >
-        <h2 class="pt-8 border-b-2 text-2xl text-white">Portfolio</h2>
+        <h2 class="pt-8 border-b-2 text-2xl text-white" id="Portfolio">
+          Portfolio
+        </h2>
         <div class="flex flex-col p-4 gap-y-5">
           <div class="w-[400px] relative">
             <a href="#">
@@ -299,36 +306,42 @@
 
       <section
         class="bg-indigo-950 flex flex-col text-white pb-8 gap-y-7 items-center"
+        id="contact"
       >
         <div class="flex justify-center">
-          <h2 class="pt-8 border-b-2 text-2xl">Contact</h2>
+          <h2 class="pt-8 border-b-2 text-2xl" id="ContactT">Contact</h2>
         </div>
         <div class="flex flex-col p-4 w-full">
           <div class="w-full">
             <form class="flex flex-col gap-y-5">
               <input
+                id="Contact1"
                 type="text"
                 placeholder="Full name"
                 class="rounded-full bg-gray-600 bg-opacity-50 p-2 px-3 text-[14px]"
               />
               <input
+                id="Contact2"
                 type="text"
                 placeholder="Email Address"
                 class="rounded-full bg-gray-600 bg-opacity-50 p-2 px-3 text-[14px]"
               />
               <div class="w-full flex justify-between">
                 <input
+                  id="Contact3"
                   type="text"
                   placeholder="Phone Number"
                   class="rounded-full bg-gray-600 bg-opacity-50 p-2 px-3 text-[14px] w-[49%]"
                 />
                 <input
                   type="text"
+                  id="Contact4"
                   placeholder="Subject"
                   class="rounded-full bg-gray-600 bg-opacity-50 p-2 px-3 text-[14px] w-[49%]"
                 />
               </div>
               <textarea
+                id="Contact5"
                 name=""
                 id=""
                 placeholder="Your Message"
@@ -336,6 +349,7 @@
               ></textarea>
               <div class="flex justify-center items-center">
                 <input
+                  id="ContactB"
                   type="submit"
                   value="Send"
                   class="rounded-full bg-gray-600 bg-opacity-50 p-2 px-3 text-[14px] text-center w-32"
