@@ -14,7 +14,7 @@
     />
     <script src="./script.js" defer></script>
   </head>
-  <body>
+  <body class="font-poppins">
     <header class="w-full">
       <nav
         class="bg-indigo-950 flex flex-col p-4 items-center w-full text-white relative"
@@ -23,6 +23,7 @@
           <div>
             <img
               src="./img/iran-flag-icon-256.png"
+              lang="en"
               alt="lang"
               width="35x"
               title="change language"
@@ -34,7 +35,7 @@
           </div>
         </div>
         <div
-          class="flex-col items-center p-14 gap-y-3 text-white flex absolute bg-gray-950 w-full min-h-screen bg-opacity-80 top-0 left-[-500px] transition-all duration-500 text-3xl"
+          class="flex-col items-center p-14 gap-y-3 text-white flex absolute bg-gray-950 w-full min-h-screen bg-opacity-80 top-0 left-[-700px] transition-all duration-500 text-3xl"
           id="nav-links"
         >
           <i class="fa-solid fa-x absolute top-8 right-8" id="nav-close"></i>
@@ -58,8 +59,8 @@
       >
         <p class="text-orange-500 text-2xl" id="start">Hi, It's me</p>
         <h1 class="text-3xl font-bold" id="name">Erfan Mazidabadi</h1>
-        <p id="who-im1">
-          And I'm a
+        <p>
+          <span id="who-im1">And I'm a</span>
           <span class="text-orange-500 text-2xl" id="who-im2"
             >Frontend Developer</span
           >
@@ -103,8 +104,9 @@
         id="aboutme"
         class="bg-indigo-950 flex flex-col text-white items-center pb-8"
       >
-        <h2 class="pt-8 border-b-2 text-2xl" id="about">
-          About <span class="text-orange-500" id="about2">Me</span>
+        <h2 class="pt-8 border-b-2 text-2xl">
+          <span id="about">About</span>
+          <span class="text-orange-500" id="about2">Me</span>
         </h2>
         <div class="flex justify-between w-full p-4 items-center gap-x-4">
           <img
@@ -313,7 +315,7 @@
         </div>
         <div class="flex flex-col p-4 w-full">
           <div class="w-full">
-            <form class="flex flex-col gap-y-5">
+            <form class="flex flex-col gap-y-5" dir="ltr">
               <input
                 id="Contact1"
                 type="text"
@@ -343,7 +345,6 @@
               <textarea
                 id="Contact5"
                 name=""
-                id=""
                 placeholder="Your Message"
                 class="rounded-2xl bg-gray-600 bg-opacity-50 p-3 px-3 text-[14px] resize-none h-32"
               ></textarea>
