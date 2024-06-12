@@ -17,9 +17,11 @@
   <body class="font-poppins">
     <header class="w-full">
       <nav
-        class="bg-indigo-950 flex flex-col p-4 items-center w-full text-white relative"
+        class="bg-indigo-950 flex flex-col p-4 items-center w-full text-white relative xl:flex xl:flex-row xl:justify-between"
       >
-        <div class="flex justify-between w-full items-center">
+        <div
+          class="flex justify-between w-full items-center xl:justify-normal xl:w-1/5"
+        >
           <div>
             <img
               src="./img/iran-flag-icon-256.png"
@@ -30,15 +32,18 @@
               id="languageicon"
             />
           </div>
-          <div>
+          <div class="xl:hidden">
             <i class="fa fa-bars text-3xl cursor-pointer" id="nav-bars"> </i>
           </div>
         </div>
         <div
-          class="flex-col items-center p-14 gap-y-3 text-white flex absolute bg-gray-950 w-full min-h-screen bg-opacity-80 top-0 left-[-700px] transition-all duration-500 text-3xl"
+          class="flex-col items-center p-14 gap-y-3 text-white flex absolute bg-gray-950 w-full min-h-screen bg-opacity-80 top-0 left-[-700px] transition-all duration-500 text-3xl xl:flex-row xl:left-0 xl:bg-transparent xl:static xl:min-h-0 xl:p-0 xl:w-3/5 xl:gap-x-14"
           id="nav-links"
         >
-          <i class="fa-solid fa-x absolute top-8 right-8" id="nav-close"></i>
+          <i
+            class="fa-solid fa-x absolute top-8 right-8 xl:top-[-80px]"
+            id="nav-close"
+          ></i>
           <a href="#" class="a-link">Home</a>
           <a href="#aboutme" class="text-orange-500 a-link">About ME</a>
           <a href="#services" class="a-link">Services</a>
@@ -47,53 +52,57 @@
           <a href="#contact" class="a-link">Contact</a>
         </div>
         <div
-          class="bg-white text-indigo-950 rounded-full px-14 py-2 font-bold hidden"
+          class="bg-white text-indigo-950 rounded-full px-14 w-56 py-4 text-center font-bold hidden xl:block"
         >
-          <a href="#">Hear me</a>
+          <a href="#contact">Hear me</a>
         </div>
       </nav>
     </header>
     <main class="flex flex-col">
       <section
-        class="bg-purple-950 flex flex-col p-5 text-white text-center items-center"
+        class="bg-purple-950 flex flex-col p-5 text-white text-center items-center xl:flex-row xl:justify-between xl:px-20"
       >
-        <p class="text-orange-500 text-2xl" id="start">Hi, It's me</p>
-        <h1 class="text-3xl font-bold" id="name">Erfan Mazidabadi</h1>
-        <p>
-          <span id="who-im1">And I'm a</span>
-          <span class="text-orange-500 text-2xl" id="who-im2"
-            >Frontend Developer</span
-          >
-        </p>
-        <div class="flex gap-x-5 justify-center p-5 text-3xl">
-          <a
-            href="./index.html"
-            target="_blank"
-            class="border-2 border-solid border-white px-2 py-1 rounded-full"
-          >
-            <i class="fa-brands fa-linkedin"> </i>
-          </a>
-          <a
-            href="./index.html"
-            target="_blank"
-            class="border-2 border-solid border-white px-2 py-1 rounded-full"
-          >
-            <i class="fa-brands fa-github"> </i>
-          </a>
-          <a
-            href="./index.html"
-            target="_blank"
-            class="border-2 border-solid border-white px-2 py-1 rounded-full"
-          >
-            <i class="fa-brands fa-instagram"> </i>
-          </a>
-          <a
-            href="./index.html"
-            target="_blank"
-            class="border-2 border-solid border-white px-2 py-1 rounded-full"
-          >
-            <i class="fa-brands fa-telegram"> </i>
-          </a>
+        <div class="xl:flex xl:flex-col xl:gap-y-5 xl:w-3/4">
+          <div class="xl:flex xl:flex-col xl:gap-y-2">
+            <p class="text-orange-500 text-2xl" id="start">Hi, It's me</p>
+            <h1 class="text-3xl font-bold" id="name">Erfan Mazidabadi</h1>
+            <p>
+              <span id="who-im1">And I'm a</span>
+              <span class="text-orange-500 text-2xl" id="who-im2"
+                >Frontend Developer</span
+              >
+            </p>
+          </div>
+          <div class="flex gap-x-5 justify-center p-5 text-3xl">
+            <a
+              href="./index.html"
+              target="_blank"
+              class="border-2 border-solid border-white px-2 py-1 rounded-full"
+            >
+              <i class="fa-brands fa-linkedin"> </i>
+            </a>
+            <a
+              href="./index.html"
+              target="_blank"
+              class="border-2 border-solid border-white px-2 py-1 rounded-full"
+            >
+              <i class="fa-brands fa-github"> </i>
+            </a>
+            <a
+              href="./index.html"
+              target="_blank"
+              class="border-2 border-solid border-white px-2 py-1 rounded-full"
+            >
+              <i class="fa-brands fa-instagram"> </i>
+            </a>
+            <a
+              href="./index.html"
+              target="_blank"
+              class="border-2 border-solid border-white px-2 py-1 rounded-full"
+            >
+              <i class="fa-brands fa-telegram"> </i>
+            </a>
+          </div>
         </div>
         <div class="p-4">
           <img src="./img/web.png" alt="" />
@@ -108,24 +117,30 @@
           <span id="about">About</span>
           <span class="text-orange-500" id="about2">Me</span>
         </h2>
-        <div class="flex justify-between w-full p-4 items-center gap-x-4">
-          <img
-            src="./img/Head_shot.jpeg"
-            alt="face photo"
-            class="w-32 rounded-full border-2 border-white"
-          />
-          <h3 id="about-t">Frontend Developer & Graphic Designer</h3>
-        </div>
-        <div class="p-4 text-justify">
-          <p id="about-b">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex nostrum
-            quisquam explicabo minus dolore, vel ducimus debitis adipisci! Quis
-            officia veritatis asperiores non nemo nisi at vero id voluptatibus
-            aliquam.
-          </p>
+        <div
+          class="p-4 xl:flex xl:flex-row xl:items-center xl:justify-around xl:px-44"
+        >
+          <div
+            class="flex justify-between w-full p-4 items-center gap-x-4 xl:justify-normal xl:p-0"
+          >
+            <img
+              src="./img/Head_shot.jpeg"
+              alt="face photo"
+              class="w-32 rounded-full border-2 border-white"
+            />
+            <h3 id="about-t">Frontend Developer & Graphic Designer</h3>
+          </div>
+          <div class="p-4 text-justify">
+            <p id="about-b">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
+              nostrum quisquam explicabo minus dolore, vel ducimus debitis
+              adipisci! Quis officia veritatis asperiores non nemo nisi at vero
+              id voluptatibus aliquam.
+            </p>
+          </div>
         </div>
         <div
-          class="bg-white text-indigo-950 py-2 rounded-full w-[60%] text-center"
+          class="bg-white text-indigo-950 py-2 rounded-full w-[60%] text-center xl:w-[25%]"
         >
           <a href="#" id="about-btn">Read More ...</a>
         </div>
@@ -140,40 +155,50 @@
           <span class="text-orange-500" id="services2">Services</span>
         </h2>
         <div
-          class="w-[90%] bg-white rounded-2xl flex flex-col justify-center items-center gap-y-4 py-12 px-5"
+          class="flex flex-col gap-y-5 text-indigo-950 items-center pb-8 xl:flex-row xl:gap-5 xl:p-5"
         >
-          <i class="fa-solid fa-laptop text-orange-500 text-[60px]"></i>
-          <h3 class="text-3xl font-bold" id="services1-t">Web Developement</h3>
-          <p class="text-center" id="services1-b">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
-            assumenda repudiandae architecto sit ut quo ad accusamus hic
-            distinctio pariatur laudantium, tempore, repellendus ex dignissimos
-            facere cum? Alias, aut incidunt?
-          </p>
-        </div>
-        <div
-          class="w-[90%] bg-white rounded-2xl flex flex-col justify-center items-center gap-y-4 py-12 px-5"
-        >
-          <i class="fa-solid fa-mobile text-orange-500 text-[60px]"></i>
-          <h3 class="text-3xl font-bold" id="services2-t">Apps Developement</h3>
-          <p class="text-center" id="services2-b">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
-            assumenda repudiandae architecto sit ut quo ad accusamus hic
-            distinctio pariatur laudantium, tempore, repellendus ex dignissimos
-            facere cum? Alias, aut incidunt?
-          </p>
-        </div>
-        <div
-          class="w-[90%] bg-white rounded-2xl flex flex-col justify-center items-center gap-y-4 py-12 px-5"
-        >
-          <i class="fa-solid fa-laptop text-orange-500 text-[60px]"></i>
-          <h3 class="text-3xl font-bold" id="services3-t">Web Developement</h3>
-          <p class="text-center" id="services3-b">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
-            assumenda repudiandae architecto sit ut quo ad accusamus hic
-            distinctio pariatur laudantium, tempore, repellendus ex dignissimos
-            facere cum? Alias, aut incidunt?
-          </p>
+          <div
+            class="w-[90%] bg-white rounded-2xl flex flex-col justify-center items-center gap-y-4 py-12 px-5"
+          >
+            <i class="fa-solid fa-laptop text-orange-500 text-[60px]"></i>
+            <h3 class="text-3xl font-bold" id="services1-t">
+              Web Developement
+            </h3>
+            <p class="text-center" id="services1-b">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+              assumenda repudiandae architecto sit ut quo ad accusamus hic
+              distinctio pariatur laudantium, tempore, repellendus ex
+              dignissimos facere cum? Alias, aut incidunt?
+            </p>
+          </div>
+          <div
+            class="w-[90%] bg-white rounded-2xl flex flex-col justify-center items-center gap-y-4 py-12 px-5"
+          >
+            <i class="fa-solid fa-mobile text-orange-500 text-[60px]"></i>
+            <h3 class="text-3xl font-bold" id="services2-t">
+              Apps Developement
+            </h3>
+            <p class="text-center" id="services2-b">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+              assumenda repudiandae architecto sit ut quo ad accusamus hic
+              distinctio pariatur laudantium, tempore, repellendus ex
+              dignissimos facere cum? Alias, aut incidunt?
+            </p>
+          </div>
+          <div
+            class="w-[90%] bg-white rounded-2xl flex flex-col justify-center items-center gap-y-4 py-12 px-5"
+          >
+            <i class="fa-solid fa-laptop text-orange-500 text-[60px]"></i>
+            <h3 class="text-3xl font-bold" id="services3-t">
+              Web Developement
+            </h3>
+            <p class="text-center" id="services3-b">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+              assumenda repudiandae architecto sit ut quo ad accusamus hic
+              distinctio pariatur laudantium, tempore, repellendus ex
+              dignissimos facere cum? Alias, aut incidunt?
+            </p>
+          </div>
         </div>
       </section>
 
@@ -239,8 +264,8 @@
         <h2 class="pt-8 border-b-2 text-2xl text-white" id="Portfolio">
           Portfolio
         </h2>
-        <div class="flex flex-col p-4 gap-y-5">
-          <div class="w-[400px] relative">
+        <div class="flex flex-col items-center gap-y-5 xl:flex-row xl:gap-x-10">
+          <div class="w-[370px] relative">
             <a href="#">
               <img
                 src="./img/desk1.jpeg"
@@ -256,7 +281,7 @@
             </a>
           </div>
 
-          <div class="w-[400px] relative">
+          <div class="w-[370px] relative">
             <a href="#">
               <img
                 src="./img/desk2.jpeg"
@@ -272,7 +297,7 @@
             </a>
           </div>
 
-          <div class="w-[400px] relative">
+          <div class="w-[370px] relative">
             <a href="#">
               <img
                 src="./img/desk3.jpeg"
@@ -288,7 +313,7 @@
             </a>
           </div>
 
-          <div class="w-[400px] relative">
+          <div class="w-[370px] relative">
             <a href="#">
               <img
                 src="./img/desk4.jpeg"
@@ -313,60 +338,62 @@
         <div class="flex justify-center">
           <h2 class="pt-8 border-b-2 text-2xl" id="ContactT">Contact</h2>
         </div>
-        <div class="flex flex-col p-4 w-full">
-          <div class="w-full">
-            <form class="flex flex-col gap-y-5" dir="ltr">
-              <input
-                id="Contact1"
-                type="text"
-                placeholder="Full name"
-                class="rounded-full bg-gray-600 bg-opacity-50 p-2 px-3 text-[14px]"
-              />
-              <input
-                id="Contact2"
-                type="text"
-                placeholder="Email Address"
-                class="rounded-full bg-gray-600 bg-opacity-50 p-2 px-3 text-[14px]"
-              />
-              <div class="w-full flex justify-between">
+        <div class="xl:flex-row xl:flex xl:justify-around p-4 w-full">
+          <div class="flex flex-col p-4 w-full xl:w-2/4">
+            <div class="w-full">
+              <form class="flex flex-col gap-y-5" dir="ltr">
                 <input
-                  id="Contact3"
+                  id="Contact1"
                   type="text"
-                  placeholder="Phone Number"
-                  class="rounded-full bg-gray-600 bg-opacity-50 p-2 px-3 text-[14px] w-[49%]"
+                  placeholder="Full name"
+                  class="rounded-full bg-gray-600 bg-opacity-50 p-2 px-3 text-[14px]"
                 />
                 <input
+                  id="Contact2"
                   type="text"
-                  id="Contact4"
-                  placeholder="Subject"
-                  class="rounded-full bg-gray-600 bg-opacity-50 p-2 px-3 text-[14px] w-[49%]"
+                  placeholder="Email Address"
+                  class="rounded-full bg-gray-600 bg-opacity-50 p-2 px-3 text-[14px]"
                 />
-              </div>
-              <textarea
-                id="Contact5"
-                name=""
-                placeholder="Your Message"
-                class="rounded-2xl bg-gray-600 bg-opacity-50 p-3 px-3 text-[14px] resize-none h-32"
-              ></textarea>
-              <div class="flex justify-center items-center">
-                <input
-                  id="ContactB"
-                  type="submit"
-                  value="Send"
-                  class="rounded-full bg-gray-600 bg-opacity-50 p-2 px-3 text-[14px] text-center w-32"
-                />
-              </div>
-            </form>
+                <div class="w-full flex justify-between">
+                  <input
+                    id="Contact3"
+                    type="text"
+                    placeholder="Phone Number"
+                    class="rounded-full bg-gray-600 bg-opacity-50 p-2 px-3 text-[14px] w-[49%]"
+                  />
+                  <input
+                    type="text"
+                    id="Contact4"
+                    placeholder="Subject"
+                    class="rounded-full bg-gray-600 bg-opacity-50 p-2 px-3 text-[14px] w-[49%]"
+                  />
+                </div>
+                <textarea
+                  id="Contact5"
+                  name=""
+                  placeholder="Your Message"
+                  class="rounded-2xl bg-gray-600 bg-opacity-50 p-3 px-3 text-[14px] resize-none h-32"
+                ></textarea>
+                <div class="flex justify-center items-center">
+                  <input
+                    id="ContactB"
+                    type="submit"
+                    value="Send"
+                    class="rounded-full bg-gray-600 bg-opacity-50 p-2 px-3 text-[14px] text-center w-32"
+                  />
+                </div>
+              </form>
+            </div>
           </div>
-        </div>
-        <div class="flex flex-col gap-y-5 items-center justify-center p-4">
-          <div class="flex gap-x-5 justify-center items-center text-xl">
-            <i class="fa-solid fa-phone"></i>
-            <p>(+98)935-468-7677</p>
-          </div>
-          <div class="flex gap-x-5 justify-center items-center text-xl">
-            <i class="fa-solid fa-envelope"></i>
-            <p>erfanmazidam@gmail.com</p>
+          <div class="flex flex-col gap-y-5 items-center justify-center p-4">
+            <div class="flex gap-x-5 justify-center items-center text-xl">
+              <i class="fa-solid fa-phone"></i>
+              <p>(+98)935-468-7677</p>
+            </div>
+            <div class="flex gap-x-5 justify-center items-center text-xl">
+              <i class="fa-solid fa-envelope"></i>
+              <p>erfanmazidam@gmail.com</p>
+            </div>
           </div>
         </div>
       </section>
